@@ -18,5 +18,7 @@ mam_per_eco <- table(dat$ecoregion_id)
 hist(mam_per_eco,breaks = 50)
 # save plot
 png(filename = here::here("outputs","exo_dplyr_hist_mams.png"))
-hist(mam_per_eco,breaks = 50)
+hist(mam_per_eco,breaks = 50,xlab="mammals frequency",ylab="ecoregions numbers",col="blue")
 dev.off()
+
+
